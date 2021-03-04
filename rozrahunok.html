@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>output</title>
+ </head>
+ <body>
+
+<fieldset>
+ <form oninput="x.value=parseInt(a.value * 2.205).toFixed(0)",oninput="x2.value=parseInt(a.value)/100.toFixed(2)">
+   <p>ваша вага у кг:<input type="number" id="a" value="0"></p>
+ <p>вага у фунтах:<output name="x" for="a "></output></p>
+<p>вага у центнерах:<output name="x2" for="a "></output></p>
+</form>
+</form>
+  
+</form>
+ </fieldset>
+
+<fieldset>
+<h1><b>Введите 2 значения, чтобы посчитать их сумму</b></h1>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="number" name="a" >+
+  <input type="number" name="b" >
+  =<output name="x" for="a b"></output>
+</form> 
+ </fieldset>
+
+<fieldset>
+    </form>
+<p><h1><b>Яку б заробітну плату ви хотіли б мати?</b></h1></p>
+<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+0<input name="flevel" id="flying" type="range" step="1" min="0" max="100" value="10">100
+<p><output for="flying" name="level">20</output></p>
+</form>
+ </fieldset>
+
+
+<fieldset><legend>Розрахуй ЗП</legend>
+<form onsubmit="return false" oninput="amount.value = (hours.valueAsNumber * rate.valueAsNumber) + ((hours.valueAsNumber * rate.valueAsNumber) * vat.valueAsNumber)">
+ 
+ <p><label for="hours">години</label>
+  <input type="number" min="0" id="hours" name="hours"></p>
+ <p><label for="rate">ставка</label>
+  <span></span><input type="number" min="0" id="rate" name="rate"></p>
+ <p><label for="vat">податок</label>
+  <input type="number" min="0" id="vat" value="0.20" name="vat"></p>
+ <p>всього: <strong><output name="amount" for="hours rate vat"></output></strong>грн</p>
+</form>
+ </fieldset>
+</form>
+ </fieldset>
+ <p><input type="submit" value="Отправить">
+      <input type="reset" value="Очистить"></p>
+</fo
+
+
+
+
+</body>
+</html>
