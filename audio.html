@@ -1,0 +1,37 @@
+﻿
+<html>
+<head>
+<style>
+li:hover{
+    width:100px;
+    background:gold;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+<audio id=audio src="sound1.mp3" controls></audio>
+<ul>
+    <li id="C:\Documents and Settings\VIP\Мои документы\Downloads\melanie-c-never-be-the-same-again-(megapesni.cc).mp3">sound1</li>
+    <li id="C:\Documents and Settings\VIP\Рабочий стол\сайт3\ Suite for piano op25 [Lyubimov] (1) Prelude.mp3">sound2</li>
+    <li id="C:\Documents and Settings\VIP\Рабочий стол\сайт3\Telemann - Quartet 4 bm (TWV 43) [Wentz] (3) Gay.mp3">sound3</li>
+    <li id="C:\Documents and Settings\VIP\Рабочий стол\сайт3\Прокофьев - Piano Sonata 2 dm op14 [Petrov] (2) Scherzo. Allegro marcato.mp3">sound4</li>
+    
+</ul>
+<script>
+var alles_li = document.getElementsByTagName("li");
+for(var i = 0; i < alles_li.length; i++){
+    alles_li[i].onclick = function(){
+        audio.src = this.id;
+        audio.play();
+    }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
